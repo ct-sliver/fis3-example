@@ -1,0 +1,25 @@
+body {
+	background-color: #FFCCFF;
+  a{
+    color: red;
+  }
+}
+
+li {
+  position: relative;
+  list-style: none;
+  &.list-1::before {
+    background-image: url('./img/list-1.png?__sprite');
+  }
+  &.list-2::before {
+    background-image: url('./img/list-2.png?__sprite');
+  }
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  left: -15px;
+}
